@@ -1,14 +1,18 @@
+
+@import url(font-text.css);
+
+
 @media screen and (max-width:700px) {
 
     .menu {
-        width: 100%;
+       width: 100%;
         max-height: 0;
         overflow: hidden;
-z-index: 10;
+        z-index: 10;
 
-position: absolute;
-background-color: #127369;
-top: 50px;
+        position: absolute;
+        background-color: #127369;
+        top: 50px;
     }
 
     .list {
@@ -32,9 +36,10 @@ top: 50px;
     .galeria {
         flex-direction: column;
     }
-    .imagens img{
-       width:190px ;
-       height: 180px;
+
+    .imagens img {
+        width: 190px;
+        height: 180px;
     }
 
 }
