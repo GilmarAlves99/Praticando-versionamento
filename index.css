@@ -1,7 +1,9 @@
 @import url(font-text.css);
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -97,28 +99,37 @@ header {
 .imagens {
 
     display: inherit;
-    flex: 2;
+    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    
 
-gap: 10px;
+    
 }
 
 
-.mapa {
-    flex: 1;
-}
 
 .imagens img {
     width: 250px;
-    height: 200px;
-
+    height: 210px;
+    cursor: zoom-in;
 }
 
 .sobre {
     max-width: 100%;
-    background-color: #127369;
     padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.sobre div.conteudosobre {
+    width: 100%;
+    background-color: var(--verde);
+}
+
+.mapa {
+    width: 800px;
+    padding: 20px 0px;
 }
 
 .titulo {

@@ -40,7 +40,10 @@
     .list li a:hover:after {
         background-color: var(--verde);
     }
-
+.list li a:active ~.menu{
+ color: red;
+ background-color: red;
+}
     .navbar label {
         z-index: 1;
         display: inline-flex;
