@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Fjalla+One&display=swap');
 
 :root {
+    --branco: white;
     --verde: #127369;
     --verdeEscuro: #10403B;
     --verdeClaro: #8AA6A3;

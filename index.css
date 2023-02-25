@@ -1,11 +1,16 @@
 @import url(font-text.css);
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
+
 }
 
-
+.logoParis {
+    width: 200px;
+}
 
 .meio {
     margin: 0 auto;
@@ -15,7 +20,7 @@ body {
 .conteudo {
     display: flex;
     flex-direction: column;
-    background-color: var(--verdeEscuro);
+    background-color: var(--verde);
     width: 100%;
     height: 100%;
     color: var(--cinzaClaro);
@@ -32,7 +37,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-
+    background-color: var(--branco);
     padding: 15px;
 }
 
@@ -46,10 +51,35 @@ header {
     margin-right: 50px;
 }
 
+
 .list {
     list-style: none;
     display: flex;
     gap: 25px;
+}
+
+.list li a {
+    color: var(--verdeEscuro);
+    font-family: var(--fontFjalla);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.list li a::after {
+    content: "";
+    display: block;
+    background-color: var(--cinzaClaro);
+    width: 0;
+    height: 2px;
+
+    bottom: 0px;
+    transition: 0.5s
+}
+
+.list li a:hover:after {
+    width: 100%;
+    transition: 1s;
+    background-color: var(--verdeEscuro);
 }
 
 #toggle, .navbar label {
@@ -58,7 +88,7 @@ header {
 
 
 .galeria {
-
+    background-color: #127369;
     display: flex;
 
     margin-top: 20px;
@@ -67,16 +97,13 @@ header {
 .imagens {
 
     display: inherit;
-    flex: 1;
+    flex: 2;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-
+gap: 10px;
 }
 
-.mapa, .imagens img {
-    padding: 10px;
-}
 
 .mapa {
     flex: 1;
@@ -84,14 +111,35 @@ header {
 
 .imagens img {
     width: 250px;
-    height: 190px;
+    height: 200px;
 
 }
 
 .sobre {
+    max-width: 100%;
     background-color: #127369;
     padding: 20px;
 }
+
+.titulo {
+    font-family: var(--fontFjalla);
+    font-size: 2em;
+    position: relative;
+
+}
+
+.textoFormatado, .hino {
+    font-family: var(--fontAbel);
+    font-size: 1.4rem;
+    word-wrap: break-word;
+}
+
+.hino {
+    position: relative;
+    top: -30px;
+
+}
+
 
 footer {
     height: 100%;
@@ -102,8 +150,8 @@ footer {
 .rodape {
     display: flex;
     flex-wrap: wrap;
-
-
+    background-color: var(--branco);
+    margin-bottom: 20px;
 }
 
 .rodape div {
@@ -115,6 +163,15 @@ footer {
 }
 
 .contato {
+
     display: flex;
+    position: relative;
     flex-direction: column;
+}
+
+.contato h4 {
+    font-size: 1rem;
+    color: var(--verdeEscuro);
+    margin: 0px;
+
 }
