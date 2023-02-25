@@ -1,17 +1,17 @@
+@import url(font-text.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:wght@100&family=Righteous&family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
+
 }
 
-:root {
-    --verde: #127369;
-    --verdeEscuro: #10403B;
-    --verdeClaro: #8AA6A3;
-    --cinzaEscuro: #4C5958;
-    --cinzaClaro: #BFBFBF;
+.logoParis {
+    width: 200px;
 }
 
 .meio {
@@ -22,7 +22,7 @@ body {
 .conteudo {
     display: flex;
     flex-direction: column;
-    background-color: var(--verdeEscuro);
+    background-color: var(--verde);
     width: 100%;
     height: 100%;
     color: var(--cinzaClaro);
@@ -31,85 +31,158 @@ body {
 header {
 
     width: 100%;
- 
+
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-
+    background-color: var(--branco);
     padding: 15px;
 }
-.navbar a{
+
+.navbar a {
     text-transform: none;
     text-decoration: none;
     color: inherit;
 }
-.logo{
+
+.logo {
     margin-right: 50px;
 }
-.list{
+
+
+.list {
     list-style: none;
     display: flex;
-    gap:25px;
+    gap: 25px;
 }
 
-#toggle,.navbar label{display: none;}
+.list li a {
+    color: var(--verdeEscuro);
+    font-family: var(--fontFjalla);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.list li a::after {
+    content: "";
+    display: block;
+    background-color: var(--cinzaClaro);
+    width: 0;
+    height: 2px;
+
+    bottom: 0px;
+    transition: 0.5s
+}
+
+.list li a:hover:after {
+    width: 100%;
+    transition: 1s;
+    background-color: var(--verdeEscuro);
+}
+
+#toggle, .navbar label {
+    display: none;
+}
 
 
 .galeria {
- 
+    background-color: #127369;
     display: flex;
-    
+
     margin-top: 20px;
 }
 
 .imagens {
-    
+
     display: inherit;
-    flex: 1;
+    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    
+
+    
+}
 
 
-}
-.mapa,.imagens img{
-    padding: 10px;
-}
-.mapa{
-     flex: 1;
-}
+
 .imagens img {
-   width: 250px;
-   height: 190px;
-   
+    width: 250px;
+    height: 210px;
+    cursor: zoom-in;
 }
 
-.sobre{
-    background-color: #127369;
+.sobre {
+    max-width: 100%;
     padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
 }
+
+.sobre div.conteudosobre {
+    width: 100%;
+    background-color: var(--verde);
+}
+
+.mapa {
+    width: 800px;
+    padding: 20px 0px;
+}
+
+.titulo {
+    font-family: var(--fontFjalla);
+    font-size: 2em;
+    position: relative;
+
+}
+
+.textoFormatado, .hino {
+    font-family: var(--fontAbel);
+    font-size: 1.4rem;
+    word-wrap: break-word;
+}
+
+.hino {
+    position: relative;
+    top: -30px;
+
+}
+
+
 footer {
     height: 100%;
-  
-  
-}
-.rodape{
-    display: flex;
-    flex-wrap: wrap;
-   
+
 
 }
-.rodape div{
- 
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--branco);
+    margin-bottom: 20px;
+}
+
+.rodape div {
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
-.contato{
+
+.contato {
+
     display: flex;
+    position: relative;
     flex-direction: column;
+}
+
+.contato h4 {
+    font-size: 1rem;
+    color: var(--verdeEscuro);
+    margin: 0px;
+
 }
