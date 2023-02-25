@@ -6,7 +6,7 @@ Link : https://gilmaralves99.github.io/Praticando-versionamento/
 Lista :
 
 - [x] Etapa 1
-- [ ] Etapa 2
+- [x] Etapa 2
 - [ ] Etapa 3
 - [ ] Etapa 4
 
