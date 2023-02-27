@@ -2,20 +2,29 @@
 
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
     .titulo {
         font-size: 1.7em;
 
     }
 
-    .menu {
+    .fechaMenu {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: #ffffffb2;
+        z-index: 1;
+    }
 
+    .menu {
+        display: block;
         transition: 0.8s ease-in-out;
         width: 100%;
         max-height: 0%;
 
         overflow: hidden;
-        z-index: 0;
+        z-index: 2;
 
         position: absolute;
         background-color: var(--verdeEscuro);
@@ -40,12 +49,9 @@
     .list li a:hover:after {
         background-color: var(--verde);
     }
-.list li a:active ~.menu{
- color: red;
- background-color: red;
-}
+
     .navbar label {
-        z-index: 1;
+        z-index: 3;
         display: inline-flex;
         align-items: center;
         cursor: pointer;
@@ -89,7 +95,7 @@
 
     #toggle:checked~label #hamburguer::before {
 
-        transform: rotate(255deg);
+        transform: rotate(320deg);
         width: 50%;
 
     }
@@ -98,7 +104,7 @@
         position: relative;
         top: -7px;
         width: 50%;
-        transform: rotate(-255deg);
+        transform: rotate(-320deg);
 
     }
 
@@ -107,19 +113,28 @@
         max-height: 100%;
     }
 
-    .galeria {
 
+    .apresentacao {
         flex-direction: column;
     }
 
+    .fotoPrincipal {
+        min-width: 20%;
+        height: 250px;
+    }
+
     .imagens img {
-       min-width: 20%;
+        min-width: 20%;
         height: 250px;
 
     }
 
     .logoParis {
         width: 200px;
+    }
+
+    .sobre {
+        flex-direction: column;
     }
 
 }
