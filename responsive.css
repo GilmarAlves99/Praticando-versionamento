@@ -3,6 +3,8 @@
 
 
 @media screen and (max-width:900px) {
+  
+
     .titulo {
         font-size: 1.7em;
 
@@ -119,15 +121,21 @@
     }
 
     .fotoPrincipal {
-        min-width: 20%;
-        height: 250px;
+        min-width: 50%;
+        height: 300px;
+
+    }
+
+    .fotoApresentacao, .textoApresentacao {
+        margin: 10px 0px;
     }
 
     .imagens img {
         min-width: 20%;
         height: 250px;
-
     }
+
+    
 
     .logoParis {
         width: 200px;
