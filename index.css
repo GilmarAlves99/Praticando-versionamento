@@ -1,5 +1,4 @@
 @import url(font-text.css);
-
 html {
     scroll-behavior: smooth;
 }
@@ -8,7 +7,11 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
 
+section img {
+    border-radius: 10px;
+    box-shadow: rgba(53, 53, 53, 0.596) 0px 0px 10px;
 }
 
 .logoParis {
@@ -30,9 +33,7 @@ body {
 }
 
 header {
-
     width: 100%;
-
 }
 
 .navbar {
@@ -54,7 +55,6 @@ header {
     margin-right: 50px;
 }
 
-
 .list {
     list-style: none;
     display: flex;
@@ -74,7 +74,6 @@ header {
     background-color: var(--cinzaClaro);
     width: 0;
     height: 2px;
-
     bottom: 0px;
     transition: 0.5s
 }
@@ -85,17 +84,18 @@ header {
     background-color: var(--verdeEscuro);
 }
 
-#toggle, .navbar label {
+#toggle,
+.navbar label {
     display: none;
 }
 
 .apresentacao {
-
     height: 100%;
     display: flex;
 }
 
-.fotoApresetacao, .textoApresentacao {
+.fotoApresetacao,
+.textoApresentacao {
     margin: 50px;
     display: inherit;
     flex: 1;
@@ -113,12 +113,10 @@ header {
 .textoApresentacao {
     flex-direction: column;
     color: var(--branco);
-
     text-align: center;
 }
 
 .textoApresentacao span {
-
     text-align: right;
     font-style: italic;
     color: var(--cinzaClaro);
@@ -127,7 +125,6 @@ header {
 .galeria {
     background-color: #127369;
     display: flex;
-
     margin-top: 20px;
 }
 
@@ -141,17 +138,11 @@ header {
 }
 
 .imagens {
-
     display: inherit;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-
-
-
 }
-
-
 
 .imagens img {
     width: 250px;
@@ -180,10 +171,10 @@ header {
     font-family: var(--fontFjalla);
     font-size: 2em;
     position: relative;
-
 }
 
-.textoFormatado, .hino {
+.textoFormatado,
+.hino {
     font-family: var(--fontAbel);
     font-size: 1.4rem;
     word-wrap: break-word;
@@ -192,14 +183,10 @@ header {
 .hino {
     position: relative;
     top: -30px;
-
 }
-
 
 footer {
     height: 100%;
-
-
 }
 
 .rodape {
@@ -210,7 +197,6 @@ footer {
 }
 
 .rodape div {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +204,6 @@ footer {
 }
 
 .contato {
-
     display: flex;
     position: relative;
     flex-direction: column;
@@ -228,5 +213,4 @@ footer {
     font-size: 1rem;
     color: var(--verdeEscuro);
     margin: 0px;
-
 }
