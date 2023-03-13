@@ -1,0 +1,61 @@
+@import url(font-text.css);
+.dark {
+    position: relative;
+    display: inherit;
+    flex: 0.7;
+    align-items: center;
+    justify-content: right;
+}
+
+label.switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+label.switch .switch-wrapper {
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    position: relative;
+}
+
+label.switch .switch-wrapper .switch-button {
+    background-color: var(--cinzaEscuro);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+}
+
+label.switch .switch-wrapper input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+label.switch .switch-wrapper .switch-button::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 4px;
+    border-radius: 50%;
+    bottom: 4px;
+    transition: .4s all;
+    background-color: var(--branco);
+}
+
+label.switch .switch-wrapper input:checked+.switch-button {
+    background-color: var(--verde);
+}
+
+label.switch .switch-wrapper input:checked+.switch-button::before {
+    transform: translateX(21px);
+}
