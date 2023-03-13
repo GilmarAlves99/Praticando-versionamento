@@ -7,7 +7,7 @@ Lista :
 
 - [x] Etapa 1
 - [x] Etapa 2
-- [ ] Etapa 3
+- [x] Etapa 3
 - [ ] Etapa 4
 
 
