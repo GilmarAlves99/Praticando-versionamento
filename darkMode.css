@@ -22,7 +22,7 @@ label.switch .switch-wrapper {
 }
 
 label.switch .switch-wrapper .switch-button {
-    background-color: var(--cinzaEscuro);
+    background-color: var(--branco);
     position: absolute;
     top: 0;
     left: 0;
@@ -49,13 +49,14 @@ label.switch .switch-wrapper .switch-button::before {
     border-radius: 50%;
     bottom: 4px;
     transition: .4s all;
-    background-color: var(--branco);
+    background-color: var(--preto);
 }
 
 label.switch .switch-wrapper input:checked+.switch-button {
-    background-color: var(--verde);
+    background-color: var(--branco);
 }
 
 label.switch .switch-wrapper input:checked+.switch-button::before {
     transform: translateX(21px);
+    background-color: var(--preto)
 }

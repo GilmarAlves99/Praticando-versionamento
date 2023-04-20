@@ -1,15 +1,11 @@
 const darkButton = document.getElementById("darkInput");
 
-
 const branco = document.documentElement;
-const verdeEscuro = getComputedStyle(document.documentElement).getPropertyValue('--verdeEScuro');
-const verdeClaro = getComputedStyle(document.documentElement).getPropertyValue('--verdeClaro');
-const verde = getComputedStyle(document.documentElement).getPropertyValue('--verde');
-const cinzaEscuro = getComputedStyle(document.documentElement).getPropertyValue('--cinzaEscuro');
-const cinzaClaro = getComputedStyle(document.documentElement).getPropertyValue('--cinzaClaro');
+const preto = document.documentElement;
 
 function padraocores() {
-    branco.style.setProperty('--branco', "#fff");
+    branco.style.setProperty('--branco', '#fff')
+    preto.style.setProperty('--preto', "#000");
 }
 
 
@@ -21,8 +17,8 @@ function ativadoounao() {
 
     if (darkButton.checked == true) {
         console.log("ativado")
-        branco.style.setProperty('--branco', 'black')
-
+        branco.style.setProperty('--branco', '#000')
+        preto.style.setProperty('--preto', '#fff')
 
     } else if (darkButton.checked == false) {
         console.log("desativado")

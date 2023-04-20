@@ -6,6 +6,16 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: var(--branco);
+    color: var(--preto)
+}
+
+#indicator {
+    background-color: #ff4754;
+    height: .35rem;
+    width: 0;
+    position: fixed;
+    top: 0;
 }
 
 section img {
@@ -25,10 +35,9 @@ section img {
 .conteudo {
     display: flex;
     flex-direction: column;
-    background-color: var(--verde);
     width: 100%;
     height: 100%;
-    color: var(--cinzaClaro);
+    color: var(--preto);
 }
 
 header {
@@ -40,7 +49,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--branco);
+    background-color: var(--preto);
     padding: 15px;
 }
 
@@ -61,7 +70,7 @@ header {
 }
 
 .list li a {
-    color: var(--verdeEscuro);
+    color: var(--branco);
     font-family: var(--fontFjalla);
     font-weight: bolder;
     letter-spacing: 2px;
@@ -70,7 +79,7 @@ header {
 .list li a::after {
     content: "";
     display: block;
-    background-color: var(--cinzaClaro);
+    background-color: var(--branco);
     width: 0;
     height: 2px;
     bottom: 0px;
@@ -80,7 +89,6 @@ header {
 .list li a:hover:after {
     width: 100%;
     transition: 1s;
-    background-color: var(--verdeEscuro);
 }
 
 #toggle,
@@ -111,14 +119,14 @@ header {
 
 .textoApresentacao {
     flex-direction: column;
-    color: var(--branco);
+    color: var(--preto);
     text-align: center;
 }
 
 .textoApresentacao span {
     text-align: right;
     font-style: italic;
-    color: var(--cinzaClaro);
+    color: var(--preto);
 }
 
 .galeria {
@@ -149,7 +157,8 @@ header {
 }
 
 .sobre {
-    max-width: 100%;
+    margin: auto;
+    max-width: 85%;
     padding: 20px;
     display: flex;
     flex-wrap: nowrap;
@@ -157,7 +166,8 @@ header {
 
 .sobre div.conteudosobre {
     flex: 1;
-    background-color: var(--verde);
+    padding: 10px;
+    text-align: justify;
 }
 
 .mapa {
@@ -190,7 +200,6 @@ footer {
 .rodape {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--branco);
     margin-bottom: 20px;
 }
 
@@ -209,6 +218,6 @@ footer {
 
 .contato h4 {
     font-size: 1rem;
-    color: var(--verdeEscuro);
+    color: var(--preto);
     margin: 0px;
 }

@@ -1,12 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Fjalla+One&display=swap');
 :root {
-    --branco: white;
-    --verde: #127369;
-    --verdeEscuro: #10403B;
-    --verdeClaro: #8AA6A3;
-    --cinzaEscuro: #4C5958;
-    --cinzaClaro: #BFBFBF;
+    --preto: #000;
+    --branco: #ffff;
     --fontAbel: 'Abel', sans-serif;
     --fontFjalla: 'Fjalla One', sans-serif;
 }
