@@ -6,8 +6,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: var(--branco);
-    color: var(--preto)
+    background-color: var(--verdeEscuro);
 }
 
 #indicator {
@@ -16,6 +15,7 @@ body {
     width: 0;
     position: fixed;
     top: 0;
+    z-index: 5;
 }
 
 section img {
@@ -60,13 +60,18 @@ header {
 }
 
 .logo {
-    margin-right: 50px;
+    z-index: 3;
 }
 
 .list {
     list-style: none;
     display: flex;
     gap: 25px;
+}
+
+.list li {
+    text-align: center;
+    width: 20%;
 }
 
 .list li a {
@@ -119,14 +124,14 @@ header {
 
 .textoApresentacao {
     flex-direction: column;
-    color: var(--preto);
+    color: var(--branco);
     text-align: center;
 }
 
 .textoApresentacao span {
     text-align: right;
     font-style: italic;
-    color: var(--preto);
+    color: var(--branco);
 }
 
 .galeria {
@@ -162,6 +167,7 @@ header {
     padding: 20px;
     display: flex;
     flex-wrap: nowrap;
+    color: var(--branco);
 }
 
 .sobre div.conteudosobre {
@@ -218,6 +224,19 @@ footer {
 
 .contato h4 {
     font-size: 1rem;
-    color: var(--preto);
+    color: var(--branco);
     margin: 0px;
+}
+
+.contato h4 a {
+    text-transform: none;
+    text-decoration: none;
+}
+
+.contato h4 a:visited {
+    color: #ff4754;
+}
+
+.contato h4 a:link {
+    color: black;
 }

@@ -3,6 +3,9 @@
 :root {
     --preto: #000;
     --branco: #ffff;
+    --verde: #127369;
+    --verdeClaro: #8AA6A3;
+    --verdeEscuro: #10403B;
     --fontAbel: 'Abel', sans-serif;
     --fontFjalla: 'Fjalla One', sans-serif;
 }
